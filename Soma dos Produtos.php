@@ -7,24 +7,11 @@
     <title>Calculos dos Produtos</title>
 </head>
 <body>
-    <form name="soma" method="post" action="exibir_soma.php">
-    <label>Codigo:</label>
-    <input type="text" name="codigo"><br>
-    <label>Descrição:</label>
-    <input type="text" name="descricao"><br>
-    <label>Marca:</label>
-    <input type="text" name="marca"><br>
-    <label>Preço Unit:</label>
-    <input type="text" name="preco"><br>
-    <label>Quantidade:</label>
-    <input type="text" name="quantidade"><br>
-    <input type="submit" name="calcular" value="Calcular">
-    </form>
 
     <?php
-    if(isset($_POST['calcular'])) {
+    if (isset($_POST['calcular'])) {
        
-        if(!empty($_POST['codigo']) && !empty($_POST['descricao']) && !empty($_POST['marca']) && !empty($_POST['preco']) && !empty($_POST['quantidade'])) {
+        if (!empty($_POST['codigo']) && !empty($_POST['descricao']) && !empty($_POST['marca']) && !empty($_POST['preco']) && !empty($_POST['quantidade'])) {
  
             $preco_unit = $_POST['preco'];
             $quantidade = $_POST['quantidade'];
